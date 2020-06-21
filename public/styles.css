@@ -1,0 +1,144 @@
+:root{
+    --main-pink: #ff6b81;
+    --secondary-pink: #ff4757;
+
+    --main-green: #7bed9f;
+    --secondary-green: #2ed573;
+}
+
+*{
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Josefin Sans', sans-serif;
+    font-size: 16px;
+    margin: 0;    
+}
+
+.wrapper{
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 15px;
+}
+
+
+header {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 10;
+    background-color: #fff;
+}
+
+#nav-bar {
+    padding: 40px 0;;
+}
+
+
+.container {
+    display: flex;
+    justify-content: flex-start;
+    flex-wrap: wrap;
+}
+
+.app-details.wrapper {
+    margin-top: 170px;
+    margin-bottom: 70px;
+}
+
+h2 {
+    text-transform: uppercase;
+}
+
+p {
+    font-weight: 300;
+    line-height: 1.5rem;
+}
+
+
+a {
+    text-decoration: none;
+    color: #fff;
+    font-weight: 300;
+    padding: 1px 2px;
+    margin-right: 40px;
+    background-color: var(--main-pink);
+}
+
+a:hover, 
+a:focus {
+    background-color: var(--secondary-pink);
+}
+
+
+
+/* Home */
+
+#capture {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.row {
+    width: 50%;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+}
+
+label{
+    margin-top: 30px;
+    color: var(--main-green);
+}
+
+input[type="text"] {
+    padding-top: 10px;
+    margin-top: 10px;
+    outline: none;
+    border:none;
+    border-bottom: 2px solid var(--main-green);
+}
+
+input[type="text"]:focus{
+    border-bottom: 2px solid var(--secondary-green);
+}
+
+button{
+    padding: 13px;
+    margin-top: 20px;
+    background-color: var(--main-green);
+    border: none;
+    color: #fff;
+    text-transform: uppercase;
+    font-size: 0.7rem;
+    letter-spacing: 0.2rem;
+}
+
+button:hover{
+    background-color: var(--secondary-green);
+}
+
+#capture-screen{
+    margin: 20px 0;
+    text-align: center;
+}
+
+/* Logs */
+
+.mood-card {
+    border-top: 1px solid #000;
+    margin: 20px 11px 20px 11px;
+    max-width: 23%;
+}
+
+.mood-card img {
+    width: 100%;
+}
+
+.mood-card p {
+    font-size: 0.9rem;
+}

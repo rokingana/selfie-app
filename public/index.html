@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@300;400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+    <script src="https://cdn.jsdelivr.net/npm/p5@1.0.0/lib/p5.min.js"></script>
+    <title>Hello</title>
+</head>
+<body>
+    <header>
+        <div class="wrapper">
+            <div id="nav-bar"><a href="/">Home</a><a href="/logs">Logs</a></div>
+        </div>        
+    </header>
+    <div class="app-details wrapper">
+        <h1>Selfie App</h1>
+        <p>This app was developed following the Code Train course</p>
+    </div>
+    <div class="wrapper">  
+        <div id="capture">
+            <div class="row">
+                <h2>Your location</h2>
+                <p>Latitude: <span id="lat"></span>&deg;</br>
+                    Longitude: <span id="long"></span>&deg;</p>
+                <form>
+                    <label for="name">Your name</label>
+                    <input id="name" type="text">
+                    <label for="mood">How is your mood?</label>
+                    <input id="mood" type="text" placeholder="happy">
+                    <button id="submit">Add new mood selfie</button>
+                </form>
+            </div>
+     
+            <div id="capture-screen" class="row">
+
+            </div>     
+        </div>
+    </div>
+    
+    <script src="script.js"></script>    
+</body>
+</html>
