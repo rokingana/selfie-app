@@ -1,6 +1,7 @@
 /* Client side that gets data from db and serves it to the Logs client */
 
 getData();
+
 async function getData() {
     const res = await fetch('/api');
     const data = await res.json();
